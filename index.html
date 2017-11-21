@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="mobile.css">
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600" rel="stylesheet">
+  <title>T H R I V E</title>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="tilted-stripe"></div>
+    <div id="logo-stripe">
+      <img src="img/THsymbol.svg" id="TH-symbol"></img>
+      <div id="title-row">
+        <h1 id="logo-title">Thrive</h1>
+        <h1 id="logo-subtext">Concious fashion</h1>
+      </div>
+    </div>
+    <div id="slideshow">
+      <div id="test-div">
+        <div id="clickonclothing">Click on garment</div>
+      </div>
+      <!-- Just create many elements with the same class name: -->
+      <div class="mySlides">
+        <img src="img/mobile_pic_1.png" onclick="showInfo1()">
+
+        <!-- början -->
+        <div class="info-box" id="info-box1" onclick="hideInfo1()">
+          <div class="prod-box">
+            <p id="small">TWO TONED ROUND NECK KNIT</p>
+            <p id="big">FORREST NIGHT</p>
+          </div>
+          <div class="prod-box">
+            <p class="description">A cool two toned knit
+            with folded vegan logo badge and ribbed hem
+            and cuffs. The knit is diamond knitted which
+            gives a beautiful structure.</p>
+            <p class="description">Made under fair working
+            conditions and with a transparent supply chain.</p>
+          </div>
+          <div class="prod-box">
+            <div id="symbols">
+              <div class="symbol">
+                <img src="img/vegan.svg"></img>
+              </div>
+              <div class="symbol">
+                <img src="img/cotton.svg"></img>
+            </div>
+          </div>
+          <div class="materia">
+            <p class="materia">100% <br /> Vegan</p>
+            <p class="materia">100% <br /> Eco-cotton</p>
+          </div>
+          </div>
+        </div>
+        <!-- slutet -->
+      </div>
+      <div class="mySlides">
+        <img src="img/mobile_pic_2.png" onclick="showInfo2()">
+
+        <!-- början -->
+        <div class="info-box" id="info-box2" onclick="hideInfo2()">
+          <div class="prod-box">
+            <p id="small">Langerchen</p>
+            <p id="big">Parka Dakota</p>
+          </div>
+          <div class="prod-box">
+            <p class="description">Velvet, velvet, velvet - doesn't
+            this sound great? Our new velvet made of organic cotton and
+            lyocell turns Parka Dakota into a fashion highlight.</p>
+            <p class="description">Made under fair working
+            conditions and with a transparent supply chain.</p>
+          </div>
+          <div class="prod-box" id="last-prod-box">
+            <div id="symbols">
+              <div class="symbol">
+                <img src="img/vegan.svg"></img>
+              </div>
+              <div class="symbol">
+                <img src="img/cotton.svg"></img>
+              </div>
+              <div class="symbol">
+                <img src="img/lyocell.svg"></img>
+              </div>
+            </div>
+          <div class="materia">
+            <p class="materia">100% <br /> Vegan</p>
+            <p class="materia">58% <br /> Eco-cotton</p>
+            <p class="materia">29% <br /> Lyocell</p>
+          </div>
+          </div>
+        </div>
+        <!-- slutet -->
+
+
+      </div>
+      <div class="mySlides">
+        <img src="img/mobile_pic_3.png" onclick="showInfo3()">
+
+        <!-- början -->
+        <div class="info-box" id="info-box3" onclick="hideInfo3()">
+          <div class="prod-box">
+            <p id="small">Carpasus</p>
+            <p id="big">Classic White</p>
+          </div>
+          <div class="prod-box">
+            <p class="description">The CARPASUS shirt is a wardrobe
+            classic that combines style, quality and sustainability
+            in an elegant way</p>
+            <p class="description">Made under fair working
+            conditions and with a transparent supply chain.</p>
+          </div>
+          <div class="prod-box">
+            <div id="symbols">
+              <div class="symbol">
+                <img src="img/vegan.svg"></img>
+              </div>
+              <div class="symbol">
+                <img src="img/cotton.svg"></img>
+            </div>
+          </div>
+          <div class="materia">
+            <p class="materia">100% <br /> Vegan</p>
+            <p class="materia">100% <br /> Eco-cotton</p>
+          </div>
+          </div>
+        </div>
+        <!-- slutet -->
+      </div>
+
+
+      <div id="CTA">
+        <div id="social">
+          <a href="https://www.instagram.com/thrivestore.se/"><img src="img/ig1.svg" alt="instagram"></img></a>
+          <a href="https://www.youtube.com/channel/UCwyzo2XinM0b1VSMpbMGY3w"><img src="img/yt1.svg" alt="youtube"></img></a>
+          <a href="https://www.facebook.com/thrivestore.se/"><img src="img/fb1.svg" alt="facebook"></img></a>
+        </div>
+        <p><a href="http://www.thrivestore.se/">Go to store</a></p>
+      </div>
+
+    </div>
+
+
+    <!-- And two buttons to scroll the images: -->
+    <div id="navigate-area">
+      <img class="navigate" id="prew" src="img/arrow-prew.svg" onclick="plusDivs(-1)">
+      <img class="navigate" id="next" src="img/arrow-next.svg" onclick="plusDivs(+1)">
+    </div>
+
+    <!-- And add a JavaScript to select images:  -->
+    <script type="text/javascript" src="script.js"></script>
+
+    <!-- My own js-file -->
+    <script type="text/javascript" src="infobox.js"></script>
+  </div>
+</body>
+</html>
