@@ -1,0 +1,235 @@
+@media screen and (max-width: 376px) {
+
+  /*General*/
+
+  #wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Muli', sans-serif;
+    color: #F9FAFA;
+  }
+
+  p {
+    padding: 11px !important;
+  }
+
+  body a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #F9FAFA;
+  }
+
+
+  /*Top section*/
+
+  #tilted-stripe {
+    width: 237.9px;
+    height: 238.9px;
+    margin: -130px -180px -87px;
+    transform: rotate(29deg);
+    background: #ACC1D1;
+    position: absolute;
+  }
+
+  #logo-stripe {
+    width: 100%;
+    height: 70px;
+    top: 0;
+    background: #5E8CB6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+  }
+
+  img#TH-symbol {
+    width: 54px;
+    padding: 15px;
+  }
+
+  #title-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1#logo-title {
+    font-family: 'Muli', sans-serif;
+    font-size: 34px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+  }
+
+  h1#logo-subtext {
+    font-family: 'Muli', sans-serif;
+    font-size: 16.7px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-left: 5px;
+  }
+
+  /*Slider area*/
+
+  #slideshow {
+    position: unset;
+    width: 100%;
+    height: 89.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  #navigate-area {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+  }
+
+  .navigate {
+    width: 35px;
+    height: 55px;
+    padding: 5px 5px;
+    cursor: pointer;
+  }
+
+  .mySlides {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  #clickContainer {
+    position: absolute;
+    margin: 0px 0px 278px 50px;
+  }
+
+  #clickonclothing {
+    display: flex;
+    align-items: center;
+    width: 120px;
+    height: 70px;
+    background: rgba(94,140,182,0.60);
+    text-align: center;
+    font-family: 'Muli', sans-serif;
+    text-transform: uppercase;
+  }
+
+  .mySlides {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+  .info-box {
+    width: 100%;
+    font-family: 'Muli', sans-serif;
+    background: rgba(94,140,182,0.60);
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    height: 64%;
+  }
+
+  .prod-box {
+    padding: 15px 62px 0px 50px;
+  }
+
+  #second-prod-box {
+    padding: 15px 10px 0px 10px;
+  }
+
+  p#small {
+    font-size: 12.5px;
+    font-weight: 300;
+    text-align: left !important;
+    padding-left: 0px !important;
+    text-transform: uppercase;
+  }
+
+  p#big {
+    font-size: 24.5px;
+    font-weight: 300;
+    margin-top: -22px;
+    text-align: left !important;
+    padding-left: 0px !important;
+    text-transform: uppercase;
+  }
+
+  p.description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: left;
+    padding: 0px 0px 10px 0px !important;
+  }
+
+  #symbols {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .symbol {
+    width: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .materia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  p.materia {
+    width: 110px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  /* CTA */
+
+  #CTA {
+    font-family: 'Muli', sans-serif;
+    font-weight: 600;
+    width: 100%;
+    height: 54px;
+    position: absolute;
+    background-color: #5E8CB6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+  }
+
+  #social {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #social img {
+    width: 40px;
+  }
+
+
+
+}
