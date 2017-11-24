@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+
+  @media screen and (max-width: 376px) {
+
+    body {
+      margin: 0;
+      color: #F9FAFA;
+    }
+
+    #slideshow {
+      background-color: salmon;
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    }
+
+    #navigate-area {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      top: 35%;
+    }
+
+    .navigate {
+      font-family: 'Muli', sans-serif;
+      border: none;
+      color: #5E8CB6;
+      padding: 15px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 36px;
+      cursor: pointer;
+      }
+
+    .click-box {
+    position: absolute;
+    margin: 250px 0px 0px 50px;
+    }
+
+    #clickonclothing {
+      display: flex;
+      align-items: center;
+      width: 120px;
+      height: 80px;
+      background: rgba(94,140,182,0.60);
+      text-align: center;
+      font-family: 'Muli', sans-serif;
+      text-transform: uppercase;
+    }
+
+    .mySlides {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+    .info-box {
+    font-family: 'Muli', sans-serif;
+    width: 100%;
+    height: 427px;
+    background: rgba(94,140,182,0.60);
+    display: flex;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    }
+
+  }
+
+  </style>
+</head>
+<body>
+
+  <div id="slideshow">
+
+    <div class="click-box">
+      <div id="clickonclothing">Click on garment</div>
+    </div>
+
+    <!-- Just create many elements with the same class name: -->
+    <!-- 1 -->
+    <img class="mySlides" id="img_1" src="img/mobile_pic_1.png" onclick="show1()">
+    <div class="info-box" id="1" onclick="hide1()">
+      <div class="prod-box">
+        <p id="small">Two toned round neck knit</p>
+        <p id="big">Forrest night</p>
+      </div>
+      <div class="prod-box">
+        <p class="description">A cool two toned knit
+        with folded vegan logo badge and ribbed hem
+        and cuffs. The knit is diamond knitted which
+        gives a beautiful structure.</p>
+        <p class="description">Made under fair working
+        conditions and with a transparent supply chain.</p>
+      </div>
+    </div>
+
+    <img class="mySlides" id="2" src="img/mobile_pic_2.png">
+    <img class="mySlides" id="3" src="img/mobile_pic_3.png">
+
+  </div>
+
+  <!-- And two buttons to scroll the images: -->
+  <div id="navigate-area">
+    <div class="navigate" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="navigate" onclick="plusDivs(+1)">&#10095;</div>
+  </div>
+
+  <!-- And add a JavaScript to select images:  -->
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
